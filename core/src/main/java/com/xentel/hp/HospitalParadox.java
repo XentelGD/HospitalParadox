@@ -40,7 +40,6 @@ public class HospitalParadox extends Game {
     }
 
 
-
     public static void setScreenMode() {
         if (GameSettings.isFullscreen) {
             Gdx.graphics.setFullscreenMode(Gdx.graphics.getDisplayMode());

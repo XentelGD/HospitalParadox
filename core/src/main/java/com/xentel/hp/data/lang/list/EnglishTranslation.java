@@ -20,5 +20,6 @@ public class EnglishTranslation extends Translation {
         all.put("window_mode", "Set Window Mode");
         all.put("fullscreen_mode", "Set Fullscreen Mode");
         all.put("settings_menu_title", "Settings");
+        all.put("quit_button", "Quit Game");
     }
 }

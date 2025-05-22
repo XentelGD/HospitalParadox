@@ -18,5 +18,6 @@ public class RussianTranslation extends Translation {
         all.put("window_mode", "Оконный режим");
         all.put("fullscreen_mode", "Полноэкранный режим");
         all.put("settings_menu_title", "Настройки");
+        all.put("quit_button", "Выйти");
     }
 }

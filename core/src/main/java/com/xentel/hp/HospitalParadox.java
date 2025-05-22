@@ -113,8 +113,6 @@ public class HospitalParadox extends Game {
             Transition.update(renderer);
         }
 
-        System.out.println(Mouse.delta.x);
-
         timer += Gdx.graphics.getDeltaTime();
         if (timer > 1) {
             saveData();

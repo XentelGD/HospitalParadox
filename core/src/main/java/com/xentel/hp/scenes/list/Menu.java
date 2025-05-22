@@ -1,5 +1,6 @@
 package com.xentel.hp.scenes.list;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
@@ -16,7 +17,7 @@ import com.xentel.hp.utils.ui.Button;
 
 public class Menu extends Scene {
 
-    public Button play, settings;
+    public Button play, settings, quit;
 
 
     @Override
@@ -55,10 +56,20 @@ public class Menu extends Scene {
             Scenes.run(Scenes.SETTINGS);
         };
 
+        quit = new Button(
+            Translations.get("quit_button"), GameStyles.defaultButtonStyle,
+            Screen.getCenterX() - 200, Screen.getCenterY() - 200,   400, 70
+        );
+
+        quit.listener = () -> {
+            Gdx.app.exit();
+        };
+
     }
 
     private void drawUI(SpriteBatch batchUI) {
         play.update(Mouse.pos, batchUI);
         settings.update(Mouse.pos, batchUI);
+        quit.update(Mouse.pos, batchUI);
     }
 }

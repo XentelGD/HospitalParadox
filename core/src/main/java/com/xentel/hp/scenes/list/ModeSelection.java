@@ -49,6 +49,10 @@ public class ModeSelection extends Scene {
             Screen.getCenterX() - 200, Screen.getCenterY(), 400, 70
         );
 
+        newGame.listener = () -> {
+            Scenes.run(Scenes.NIGHT);
+        };
+
 
         continueGame = new Button(
             Translations.get("continue_game_button"), GameStyles.defaultButtonStyle,

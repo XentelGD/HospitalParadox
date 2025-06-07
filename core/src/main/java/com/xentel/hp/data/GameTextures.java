@@ -14,5 +14,8 @@ public class GameTextures {
         all.put("small_button_default", new Texture("ui/small_button_default.png"));
         all.put("small_button_hover", new Texture("ui/small_button_hover.png"));
         all.put("small_button_inactive", new Texture("ui/small_button_inactive.png"));
+        all.put("long_button_default", new Texture("ui/long_button_default.png"));
+        all.put("long_button_hover", new Texture("ui/long_button_hover.png"));
+        all.put("long_button_inactive", new Texture("ui/long_button_inactive.png"));
     }
 }

@@ -7,6 +7,7 @@ public class GameStyles {
 
     public static ButtonStyle defaultButtonStyle;
     public static ButtonStyle smallButtonStyle;
+    public static ButtonStyle longButtonStyle;
 
     public static void init() {
         defaultButtonStyle = new ButtonStyle(
@@ -25,6 +26,15 @@ public class GameStyles {
             new Color(1, 1, 1, 1),
             new Color(0.4f, 0.4f, 0.4f, 1f),
             GameTextures.all.get("small_button_inactive")
+        );
+
+        longButtonStyle = new ButtonStyle(
+            GameTextures.all.get("long_button_default"),
+            GameTextures.all.get("long_button_hover"),
+            GameFonts.all.get("default"),
+            new Color(1, 1, 1, 1),
+            new Color(0.4f, 0.4f, 0.4f, 1f),
+            GameTextures.all.get("long_button_inactive")
         );
     }
 }

@@ -2,6 +2,7 @@ package com.xentel.hp.scenes;
 
 import com.xentel.hp.HospitalParadox;
 import com.xentel.hp.scenes.list.*;
+import com.xentel.hp.scenes.list.night.Night;
 import com.xentel.hp.utils.Listener;
 import com.xentel.hp.utils.Transition;
 
